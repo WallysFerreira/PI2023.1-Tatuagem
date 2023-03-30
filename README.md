@@ -1,1 +1,3 @@
-# PI2023.1-Tatuagem
+# Tatuagem
+
+Aplicação desenvolvida para a disciplina de Projeto Integrador. 
