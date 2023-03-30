@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#map {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: -10;
+}
+
+#pesquisa {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 5%;
+	height: 5vh;
+	width: 95%;
+	border-radius: 6px;
+}
+
+#pesquisa img {
+}
+
+#botoes {
+	margin: auto;
+}
