@@ -51,3 +51,10 @@ footer {
 #botoes img {
 	height: 21px;
 }
+
+@media (min-width: 1080px) {
+	#pesquisa {
+		margin-top: 1%;
+		width: 60%;
+	}
+}
