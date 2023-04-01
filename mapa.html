@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nome do Projeto</title>
+	<script src="https://cdn.maptiler.com/maptiler-sdk-js/latest/maptiler-sdk.umd.min.js"></script>
+	<link href="https://cdn.maptiler.com/maptiler-sdk-js/latest/maptiler-sdk.css" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="map">
+	</div>
+
+	<div id="pesquisa">
+		<div id="detalhes">
+			<img src="img/Tela4/lupaPesquisa.svg" alt="">
+			<input type="text" placeholder="Pesquisar um estúdio de tatuagem">
+		</div>
+	</div>
+
+	<footer id="barraBaixo">
+		<div id="botoes">
+			<img src="img/barra de baixo/account.svg" alt="">
+			<img src="img/barra de baixo/home.svg" alt="">
+			<img src="img/barra de baixo/favorite.svg" alt="">
+		</div>
+	</footer>
+
+	<script>
+		maptilersdk.config.apiKey = 'Mj4Mofh4veKpvWE10M5t'
+		const map = new maptilersdk.Map({
+			container: 'map',
+			style: maptilersdk.MapStyle.STREETS,
+			center: [-34.900002,-8.050000],
+			zoom: 14,
+		});
+	</script>
+</body>
+</html>
