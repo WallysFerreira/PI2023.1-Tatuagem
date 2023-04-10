@@ -47,3 +47,21 @@ hr.hr {
     margin-right: 40px;
     margin-top: 19px;
 }
+
+hr.hr1 {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+h2#text1 {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 12px;
+}
+
+div#fotostudio {
+    width: 50px;
+    margin-left: 41px;
+    margin-top: 20px;
+}
