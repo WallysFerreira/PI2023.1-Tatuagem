@@ -1,9 +1,12 @@
 body {
     border: 1px solid;
     margin-left: 700px;
-    margin-right: 700px;                
-    padding-bottom: 200px;   
-    position: relative;
+    margin-right: 700px;
+    padding-bottom: 800px;
+    /* position: relative; */
+    /* position: absolute; */
+    padding-right: 64px;
+
 }
 
 div#tatuadora {
@@ -65,17 +68,67 @@ img.status {
 }
 
 div#conversa {
-    padding-top: 500px;
+    padding-top: 1px;
     padding-left: 48px;
 }
 
 input.field {
-    width: 372px;
+    width: 300px;
     height: 32px;
     background-color: rgb(219, 213, 213);
     border-radius: 10px;
     border: none;
+
 }
 
+div#qdificil {
 
+    width: 400px;
+    height: 6px;
+    background-color: rgb(219, 213, 213);
+    margin-top: 500px;
+    margin-bottom: 60px;
+    margin-left: 10px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
 
+div#aiai {
+    position: absolute;
+    padding-left: 28px;
+
+}
+
+div#clip {
+    position: absolute;
+    padding-left: 50px;
+    margin-top: 510px;
+}
+
+div#enviar {
+    position: absolute;
+    margin-top: 510px;
+    margin-left: 410px;
+}
+
+div#barra_de_conversa {
+    margin-top: 120px;
+    margin-bottom: -170px;
+}
+
+div#iconefixos {
+    position: absolute;
+    margin-top: 730px;
+}
+
+img.conta {
+    margin-left: 160px;
+}
+
+img.home {
+    margin-left: 50px;
+}
+
+img.lupa {
+    margin-left: 50px;
+}
