@@ -3,10 +3,8 @@ body {
     margin-left: 700px;
     margin-right: 700px;
     padding-bottom: 800px;
-    /* position: relative; */
-    /* position: absolute; */
-    padding-right: 64px;
-
+    padding-right: 22px;
+    position: absolute;
 }
 
 div#tatuadora {
@@ -20,19 +18,21 @@ h1.nometatdr {
     padding-top: 50px;
     font-size: 12pt;
     position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
 }
 
 h3.nome2tatdr {
     font-size: 7pt;
     padding-left: 120px;
     padding-top: 80px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 div#perfildochat {
     display: block;
     position: absolute;
     padding-left: 5px;
-    padding-right: 320px;
+    padding-right: 280px;
     border-radius: 20px;
     border-bottom: 1px solid white;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -112,17 +112,18 @@ div#enviar {
 }
 
 div#barra_de_conversa {
-    margin-top: 120px;
+    margin-top: 85px;
     margin-bottom: -170px;
+    margin-left:  -20px;
 }
 
 div#iconefixos {
     position: absolute;
-    margin-top: 730px;
+    margin-top: 735px;
 }
 
 img.conta {
-    margin-left: 160px;
+    margin-left: 135px;
 }
 
 img.home {
