@@ -1,4 +1,4 @@
-# Tatuagem
+# MatchInk
 
 Aplicação desenvolvida para a disciplina de Projeto Integrador. 
 
