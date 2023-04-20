@@ -5,16 +5,16 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     border: 0;
+    
 }
 
 /*Contéudo geral da página*/
 body
 {
-    margin: auto;
-    width: 375px;
-    height: 812px;
     text-align: center;
-    border: 1px solid rgb(15, 15, 15);
+    margin-left: -10%;
+    min-width: 300px;
+    height: clamp(800px, 80vw, 1000px);
 }
 
 
@@ -23,33 +23,13 @@ main
 {
     position: relative;
     display: inline-block;
-    margin-left: -9%;
     margin-top: -12%;
+    text-align: left;
+ 
 }
 
 
 
-/*Cabeçario*/
-header
-{
-    margin-top: 3%;
-    display: flex;
-}
-
-header span
-{
-    margin-left: 5%;
-}
-header ul
-{
-    margin-left: 65%;
-}
-header ul li
-{
-    list-style-type: none;
-    display: inline-block;
-  
-}
 
 
 /*Introdução da tela*/
@@ -57,18 +37,15 @@ header ul li
 #introducao
 {
     text-align: left;
-    margin-top: 247px;
-   
+    margin-top: clamp(170px, 20vw, 500px);
 }
 
 #introducao h2
 {
 
-    font-size: 24px;
+    font-size: clamp(26px, 5vw, 48px);
     font-weight: 700;
-    line-height: 36px;
-    letter-spacing: 0em;
-  
+ 
    
 }
 
@@ -76,60 +53,55 @@ header ul li
 {
     margin-top: 15px;
     color: #00000080;
-
-    font-size: 12px;
+    font-size: clamp(14px, 2.5vw, 24px);
     font-family: Poppins;
-    font-size: 12px;
     font-weight: 500;
-    line-height: 18px;
-    letter-spacing: 0em;
-    
 
 }
 
 /*Campo login*/
 
-#campoLogin
-{
+
+#campoLogin {
     text-align: center;
     position: absolute;
-    margin-top: 20%;
-
-
+    margin-top: clamp(50px, 10vw, 100px);
 }
-
 
 /*Classe que gere o texto do esqueceu senha/login */
 .esqueceu
 {
     
-    font-size: 11px;
+    font-size: clamp(13px, 3vw, 24px);
     font-weight: 700;
-    line-height: 15px;
-    letter-spacing: 0em;
     text-align: center;
-
     margin-top: 2.5%;
 }
 
 .entrada
 {
-    height: 41px;
-    width: 291px;
-    left: 100px;
-    top: 0px;
+    
+    height: clamp(41px, 10vw, 71px);
+    width: clamp(325px, 60vw, 900px);
     border-radius: 4px;
-    text-align: left;
+    text-align: center;
 
     box-shadow: 0px 13px 22px -18px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 13px 22px -18px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 13px 22px -18px rgba(0,0,0,0.75);
- 
     
+    font-size: clamp(14px, 3vw, 24px);
     padding-left: 11%;
     padding-right:12% ;
 
-    padding: auto;
+    
+  
+}
+
+::placeholder
+{
+    font-size: clamp(14px, 3vw, 24px);
+    
 }
 
 a
@@ -158,15 +130,17 @@ a:hover
 #login #iconeUsuario{
    position: absolute;
    left: 5%;
-   top: 20%;
+   top: 14%;
+   width: clamp(5%, 5vw, 6%);
 }
 
 /*Input senha*/
 
 #senha
 {
-    margin-top: 10%;
+    margin-top: clamp(40px, 10vw, 8%);
     position: relative;
+ 
 }
 
 #senha input, #login input
@@ -186,8 +160,8 @@ a:hover
 #senha #iconeSenha{
   position: absolute;
   left: 5%;
-  top: 13%;
-  
+  top: 12%;
+  width: 5%;
 }
 
 
@@ -195,14 +169,15 @@ a:hover
 {
     position: absolute;
     right: 5%;
-    bottom: 55%;
+    top: 15%;
+    width: 6%;
 }
 
 /*Opção manter conectado ou não*/
 
 #manterConect
 {
-    margin-left: 10%;
+   
     margin-top: 9%;
     position: relative;
 }
@@ -210,8 +185,7 @@ a:hover
 /* Hide the browser's default checkbox */
 #manterConect input
 {
-    
-    position: absolute;
+    position: relative;
     opacity: 0;
     cursor: pointer;
     height: 0;
@@ -224,29 +198,31 @@ a:hover
 /* Create a custom checkbox */
 .checkbox_customizado {
     position: absolute;
-    top: 10%;
-    left: 15%;
-    height: 20px;
-    width: 20px;
-    background-color: #eee;
+    
+    top: clamp(5%, 5vw, 10%);
+    left: clamp(5%, 5vw, 10%);
+
+    height: clamp(20px, 5vw, 40px);
+    width: clamp(20px, 5vw, 40px);
+    
+    background-color: #ffffff;
     border: 1px solid black;
 }
 
 
 /* On mouse-over, add a grey background color */
 #manterConect input:hover ~ .checkbox_customizado {
-    background-color: #ccc;
+    background-color: #bbb8b8;
 }
 
 /* When the checkbox is checked, add a blue background */
 #manterConect input:checked ~ .checkbox_customizado {
-    background-color: #fafafa;
+    background-color: #000000;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkbox_customizado:after {
     content: "";
-    position: absolute;
     display: none;
 }
 
@@ -257,22 +233,24 @@ a:hover
 
 /* Style the checkmark/indicator */
 #manterConect .checkbox_customizado:after {
-    left: 32%;
-    top: 13%;
-    width: 5px;
-    height: 10px;
-    border: solid rgb(0, 0, 0);
+    position: absolute;
+    left: clamp(10%, 2vw, 20%);
+    top: 1px;
+    width: clamp(10px, 2vw, 20px);
+    height: clamp(10px, 2.5vw, 20px);
+    border: solid rgb(255, 255, 255);
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+
 }
 
 #manterConect label
 {
     
     font-weight: 600;
-    font-size: 11px;
+    font-size: clamp(14px, 3vw, 31px);
     
 }
 
@@ -282,11 +260,20 @@ a:hover
 form button
 {
     
-    margin-top: 15%;
+    margin-top: 13%;
     background-color: rgb(0, 0, 0);
     color: aliceblue;
-    padding: 5px 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    /*padding-left: clamp(60px, 15vw, 60px);
+    padding-right: clamp(60px, 15vw, 60px);*/
+    width: clamp(150px, 40vw, 350px);
+    
+
     border-radius: 6px;
+    font-size: clamp(12px, 4vw, 32px);
+
 }
 
 form button:hover
