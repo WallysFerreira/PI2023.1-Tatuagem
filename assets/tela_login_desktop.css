@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Kadwa&family=Poppins:wght@200;400;700&family=Roboto:wght@300;400;700&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  margin: 0 auto;
+  width: 65%;
+  height: 80%;
+}
+
+#introducao {
+  margin-bottom: 15%;
+  font-size: 36px;
+}
+
+#introducao h2 {
+  margin-bottom: -2%;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+#parteBaixo {
+  margin-top: 14%;
+}
