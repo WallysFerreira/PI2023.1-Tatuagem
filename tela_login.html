@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" media="screen and (max-width: 999px)" type="text/css" href="assets/tela_login_mobile.css">
     <link rel="stylesheet" media="screen and (min-width: 1000px)" type="text/css" href="assets/tela_login_desktop.css">
-    <title>Tela login</title>
+    <title>MatchInk - Tela login</title>
 </head>
 
 <body>
@@ -22,61 +22,69 @@
           
             <form action="Local onde vai mandar os arquivos" method="post" onsubmit="alert('Enviado')">
 
-                <div id="login">
+                <div id="credenciais">
+                    <div class=" " id="login">
 
-                    <div id="email_input">
-                        <img src="img/Tela2/usuarioLogin.svg" alt=" Icone de usuário, é apenas um contorno da cabeça e ombros de uma pessoa, totalmente preto." id="iconeUsuario">
+                        <div class="customInput"id="email_input">
+                            <img src="img/Tela2/usuarioLogin.svg" alt=" Icone de usuário, é apenas um contorno da cabeça e ombros de uma pessoa, totalmente preto." id="iconeUsuario">
 
-                        <input type="email" name="emailLogin" class="entrada" aria-invalid placeholder="Endereço de email">
+                            <input type="email" name="emailLogin" class="entrada" aria-invalid placeholder="Endereço de email">
 
+                        </div>
+                        
+                        <p class="esqueceu"> 
+                            <a href="Pagina Esqueceu ALGO"> 
+
+                                Esqueceu email? 
+
+                            </a> 
+                        </p>
                     </div>
-                    
-                    <p class="esqueceu"> 
-                        <a href="Pagina Esqueceu ALGO"> 
 
-                            Esqueceu email? 
+                    <div class="tab" id="senha">
 
-                        </a> 
-                    </p>
-                </div>
+                        <div class="customInput" id="senha_input">
+                            <img src="img/Tela2/cadeadoSenhaLogin.svg" alt="icone de um cadeado fechado para representar uma senha segura" id="iconeSenha">
 
-                <div id="senha">
-
-                    <div id="senha_input">
-                        <img src="img/Tela2/cadeadoSenhaLogin.svg" alt="icone de um cadeado fechado para representar uma senha segura" id="iconeSenha">
-
-                        <img src="img/Tela2/sair.svg" alt=" icone de saida, é um semi quadrado com uma seta para fora dele simbolizando a saida de dentro dele" id="iconeSair">
+                            <img src="img/Tela2/sair.svg" alt=" icone de saida, é um semi quadrado com uma seta para fora dele simbolizando a saida de dentro dele" id="iconeSair">
             
-                        <input type="password" name="senhaLogin" id="as" class="entrada" aria-invalid placeholder="Senha" >
-                    </div>
+                            <input type="password" name="senhaLogin" id="as" class="entrada" aria-invalid placeholder="Senha" >
+                        </div>
 
-                    <p class="esqueceu"> 
-                        <a href="Pagina Esqueceu ALGO"> 
+                        <p class="esqueceu"> 
+                            <a href="Pagina Esqueceu ALGO"> 
 
-                            Esqueceu senha? 
+                                Esqueceu senha? 
 
-                        </a>
-                     </p>
+                            </a>
+                         </p>
+
     
-                </div>
-               
-                <div id="parteBaixo">
-                    <div id="manterConect" >
-                  
-                        <label>
-                            <input type="checkbox" name="manterConectado"  >
-                            <span class="checkbox_customizado"></span>
-                            Continuar conectado?
-                        </label>
                     </div>
+
+                     <div id="botoes">
+                         <button type="button" id="anterior">Voltar</button>
+                         <button type="button" id="proximo">Avançar</button>
+                     </div>
+               
+                    <div id="parteBaixo">
+                        <div id="manterConect" >
+                  
+                            <label>
+                                <input type="checkbox" name="manterConectado"  >
+                                <span class="checkbox_customizado"></span>
+                                Continuar conectado?
+                            </label>
+                        </div>
                 
-                    <button type="submit" class="centralizar" href="">
+                        <button type="submit" class="centralizar" href="">
                     
-                        <u>
-                            Log in
-                        </u>
+                            <u>
+                                Log in
+                            </u>
             
-                    </button>
+                        </button>
+                    </div>
                 </div>
                 
 

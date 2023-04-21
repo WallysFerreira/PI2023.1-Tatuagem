@@ -4,7 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 98vh;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -15,19 +15,65 @@ main {
 }
 
 #introducao {
-  margin-bottom: 15%;
-  font-size: 36px;
+  margin-bottom: 5%;
 }
 
 #introducao h2 {
-  margin-bottom: -2%;
+  font-size: 3.5rem;
+}
+
+#introducao p {
+  font-size: 1.4rem;
 }
 
 form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
+#credenciais {
+  border: solid;
+  width: 26%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+}
+
+input {
+  border: none;
+  width: 92%;
+  margin-left: 3%;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+.customInput {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  padding: 3% 5%;
+}
+
+.esqueceu a {
+  background-color: 
+
+#botoes {
+  margin-left: 68%;
+}
+
 #parteBaixo {
-  margin-top: 14%;
+  margin-top: 11%;
 }
